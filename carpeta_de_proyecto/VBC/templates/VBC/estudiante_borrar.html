@@ -1,0 +1,12 @@
+{% extends 'AppCoder/base.html' %}
+
+{% load static %}
+
+{% block main %}
+    <form action="" method="POST">
+        {% csrf_token %}
+        Seguro que desea borrar a este estudiante? {{estudiante.nombre}}
+        <input type="submit" value="Borrar">
+
+    </form>
+{% endblock main %}

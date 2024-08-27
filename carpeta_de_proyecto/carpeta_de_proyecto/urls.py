@@ -16,9 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from Appcoder import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('Appcoder.urls'))
+    path('', include('Appcoder.urls')),
+    path("vbc/", include("VBC.urls")),
 ]
